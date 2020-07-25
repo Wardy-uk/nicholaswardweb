@@ -1,15 +1,5 @@
 /*----------------------------------------------------
-@File: Default Styles
-@Author: SPONDON IT
 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: HostHub Construction 
-@Developed By: Naim Lasker
-Author E-mail: naimlasker@gmail.com
 
 =====================================================================*/
 /*----------------------------------------------------*/
@@ -25,6 +15,12 @@ Author E-mail: naimlasker@gmail.com
 /* Wide Mobile Layout: 480px */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+/*
+
+* {    color:                    hsla(210, 100%, 100%, 0.9) !important;    background:               hsla(210, 100%,  50%, 0.5) !important;    outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;}
+*/
+
 body {
   line-height: 26px;
   font-size: 15px;
@@ -84,13 +80,13 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 200px 0; }
+  padding: 50px 0; }
   @media (max-width: 1199px) {
     .section_gap {
       padding: 80px 0; } }
 
 .section_gap_top {
-  padding-top: 200px; }
+  padding-top: 50px; }
   @media (max-width: 1199px) {
     .section_gap_top {
       padding-top: 80px; } }
@@ -105,7 +101,7 @@ button:focus {
 ============================================================================================ */
 .main_title {
   text-align: center;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
   @media (max-width: 1199px) {
     .main_title {
       margin-bottom: 50px; } }
@@ -365,7 +361,7 @@ button:focus {
       text-align: left; }
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .banner_content {
-          margin-top: 150px; } }
+          margin-top: 50px; } }
       .home_banner_area .banner_inner .banner_content h3 {
         font-size: 40px;
         margin-bottom: 20px;
@@ -2469,7 +2465,7 @@ h6 {
 /* Start Features Area css
 ============================================================================================ */
 .features_area {
-  padding-bottom: 170px; }
+  padding-bottom: 70px; }
   @media (max-width: 1199px) {
     .features_area {
       padding-bottom: 50px; } }
@@ -3303,4 +3299,4 @@ h6 {
 ============================================================================================ */
 /*---------------------------------------------------- */
 
-/*# sourceMappingURL=style.css.map */
+
