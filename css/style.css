@@ -20,8 +20,10 @@
 
 * {    color:                    hsla(210, 100%, 100%, 0.9) !important;    background:               hsla(210, 100%,  50%, 0.5) !important;    outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;}
 */
+.antispam { 
+  display:none;}
 
-body {
+  body {
   line-height: 26px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
