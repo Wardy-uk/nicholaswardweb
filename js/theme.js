@@ -29,7 +29,9 @@
 	}
 	mailChimp();
 
-	$('select').niceSelect();
+	if ($.fn.niceSelect) {
+		$('select').niceSelect();
+	}
 	/* ---------------------------------------------
             Isotope js Starts
          --------------------------------------------- */

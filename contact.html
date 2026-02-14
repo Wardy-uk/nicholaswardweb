@@ -11,56 +11,16 @@
     })(window,document,'script','dataLayer','GTM-N9T7QCD');</script>
     <!-- End Google Tag Manager -->
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-	
-	<script type="text/javascript">
-		// split your email into two parts and remove the @ symbol
-		var first = "ward.nickj";
-		var last = "gmail.com";
-	</script>
-	
-	
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
 	<title>Nicholas John Ward</title>
-	<meta name="description=" content="Personal website of Nicholas Ward: Technical and Operations Manager">
+	<meta name="description" content="Personal website of Nicholas Ward: Technical and Operations Manager">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -123,25 +83,33 @@ $(document).ready(function(){
 				
 				<div class="col-lg-9">
 					
-					<form class="row contact_form" name="contactform" method="POST" data-netlify="true" action="/success.html">
+					<form class="row contact_form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+						<input type="hidden" name="form-name" value="contact">
+						<p hidden>
+							<label>Do not fill this out: <input name="bot-field"></label>
+						</p>
                         <div class="col-md-6">
 				
                           <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+								<label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
 							</div>
 						                            
 							<div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+								<label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" autocomplete="email" required>
                             </div>
 							
                             <div class="form-group">
-                              <input type="text" class="form-control" id="topic" name="topic" placeholder="Enter Subject">
+								<label for="topic">Subject</label>
+                              <input type="text" class="form-control" id="topic" name="topic" placeholder="Enter Subject" required>
                             </div>
 							
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control" name="comments" id="comments" rows="1" placeholder="Enter Message"></textarea>
+								<label for="comments">Message</label>
+                                <textarea class="form-control" name="comments" id="comments" rows="5" placeholder="Enter Message" required></textarea>
                             </div>
                         </div>
                         <div class="col-md-12 text-right">
@@ -165,7 +133,7 @@ $(document).ready(function(){
 					</div>
 					<div class="col-lg-5">
 						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt= $0>
+							<img class="" src="img/banner/home-right.png" alt="Portrait of Nicholas Ward">
 						</div>
 					</div>
 				</div>
@@ -189,7 +157,7 @@ $(document).ready(function(){
 			<div class="row footer_bottom justify-content-center">
 				<p class="col-lg-8 col-sm-12 footer-text">
 				
-                Website Copyright Nicholas John Ward, Images Copyright Isaac Ward &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+                Website Copyright Nicholas John Ward, Images Copyright Isaac Ward &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
                 </p>
 			</div>
 		</div>
@@ -203,15 +171,7 @@ $(document).ready(function(){
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/stellar.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 
 
