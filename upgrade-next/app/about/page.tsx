@@ -1,21 +1,11 @@
-import Link from "next/link";
+import { SiteFooter } from "../../components/SiteFooter";
+import { SiteHeader } from "../../components/SiteHeader";
 import { Timeline } from "../../components/Timeline";
 
 export default function AboutPage() {
   return (
     <>
-      <header className="header">
-        <div className="container header-inner">
-          <strong>NW Upgrade</strong>
-          <nav className="nav">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-          </nav>
-          <a className="btn" href="../../ab-wow-2/about.html">
-            Variant C About
-          </a>
-        </div>
-      </header>
+      <SiteHeader active="about" />
 
       <main className="container">
         <section className="panel grid-2">
@@ -28,9 +18,12 @@ export default function AboutPage() {
             <p className="lead">
               Focus areas include client onboarding, technical service delivery, governance, and relationship leadership.
             </p>
+            <p className="lead">
+              I provide a practical bridge between business priorities and technical execution, helping teams maintain quality and momentum.
+            </p>
           </article>
           <aside className="col">
-            <img src="../../img/about-me.png" alt="Nicholas Ward profile" style={{ width: "100%", border: "1px solid var(--line)" }} />
+            <img src="/img/about-me.png" alt="Nicholas Ward profile" style={{ width: "100%", border: "1px solid var(--line)" }} />
           </aside>
         </section>
 
@@ -38,6 +31,8 @@ export default function AboutPage() {
           <Timeline />
         </section>
       </main>
+
+      <SiteFooter />
     </>
   );
 }

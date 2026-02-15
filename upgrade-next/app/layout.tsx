@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nicholas Ward | Upgrade",
-  description: "Modern upgrade of nicholaswardweb built with Next.js",
+  title: {
+    default: "Nicholas Ward",
+    template: "%s | Nicholas Ward",
+  },
+  description: "Modern full-site upgrade of nicholaswardweb built with Next.js",
 };
 
 export default function RootLayout({

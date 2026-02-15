@@ -1,41 +1,61 @@
 import Link from "next/link";
+import { ContactForm } from "../components/ContactForm";
+import { SiteFooter } from "../components/SiteFooter";
+import { SiteHeader } from "../components/SiteHeader";
 import { Timeline } from "../components/Timeline";
 
 export default function HomePage() {
   return (
     <>
-      <header className="header">
-        <div className="container header-inner">
-          <strong>NW Upgrade</strong>
-          <nav className="nav">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-          </nav>
-          <a className="btn" href="../ab-wow-2/index.html">
-            Variant C
-          </a>
-        </div>
-      </header>
+      <SiteHeader active="home" />
 
       <main className="container">
         <section className="panel hero">
           <div className="hero-copy">
-            <p className="kicker">Modern Upgrade</p>
-            <h1>Technical Delivery, Upgraded Stack</h1>
+            <p className="kicker">Technical + Operational Leadership</p>
+            <h1>I am Nicholas Ward</h1>
             <p className="lead">
-              This version moves the site to Next.js with reusable components, centralized data, and API routing for future growth.
+              I help teams move from early scoping through implementation, rollout, and ongoing support with fewer delivery surprises.
             </p>
             <div className="actions">
               <Link className="btn btn-primary" href="/about">
-                View About
+                Learn More
               </Link>
-              <a className="btn" href="../cvAug2020.docx">
+              <Link className="btn" href="/contact">
+                Contact
+              </Link>
+              <a className="btn" href="/cvAug2020.docx">
                 Download CV
               </a>
             </div>
           </div>
           <div className="hero-media">
-            <img src="../img/banner/home-right.png" alt="Portrait of Nicholas Ward" />
+            <img src="/img/banner/home-right.png" alt="Portrait of Nicholas Ward" />
+          </div>
+        </section>
+
+        <section className="panel">
+          <div className="section-head">
+            <p className="kicker">What I Do</p>
+            <h2>From onboarding to service delivery</h2>
+          </div>
+          <div className="feature-grid">
+            <article className="feature-card">
+              <h3>Client Onboarding</h3>
+              <p>End-to-end onboarding from initial scope to live implementation.</p>
+            </article>
+            <article className="feature-card">
+              <h3>Technical Delivery</h3>
+              <p>Design and delivery of SaaS solutions in DevOps-focused environments.</p>
+            </article>
+            <article className="feature-card">
+              <h3>Operational Management</h3>
+              <p>Process and control management aligned to ISO-oriented standards.</p>
+            </article>
+            <article className="feature-card">
+              <h3>Stakeholder Relationships</h3>
+              <p>Trusted communication across clients and internal delivery teams.</p>
+            </article>
           </div>
         </section>
 
@@ -61,29 +81,19 @@ export default function HomePage() {
           <div className="grid-2">
             <article className="col">
               <p className="kicker">Contact</p>
-              <h2>API-backed contact endpoint</h2>
+              <h2>Start a conversation</h2>
               <p className="lead">
-                This upgrade includes a server route at <code>/api/contact</code> to support future form and CRM integration.
+                Prefer direct email? <a href="mailto:contact@nickward.co.uk">contact@nickward.co.uk</a>
               </p>
             </article>
             <div className="col">
-              <form className="form" action="/api/contact" method="post">
-                <input name="name" placeholder="Name" required />
-                <input type="email" name="email" placeholder="Email" required />
-                <input name="subject" placeholder="Subject" required />
-                <textarea name="message" rows={5} placeholder="Message" required />
-                <button className="btn btn-primary" type="submit">
-                  Send
-                </button>
-              </form>
+              <ContactForm compact />
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="footer">
-        <div className="container">Upgrade track for A/B and migration.</div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

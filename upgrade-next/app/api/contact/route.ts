@@ -15,5 +15,5 @@ export async function POST(request: Request) {
   // Replace with mail/CRM integration when ready.
   console.log("Contact submission", { name, email, subject, message });
 
-  return NextResponse.redirect(new URL("/", request.url), 303);
+  return NextResponse.redirect(new URL("/success", request.url), 303);
 }

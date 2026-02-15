@@ -1,6 +1,6 @@
 # Nicholas Ward Upgrade (Next.js)
 
-This is a non-destructive upgrade path that sits alongside the current static site.
+This is a non-destructive full-site upgrade path that sits alongside the current static site.
 
 ## Run locally
 
@@ -11,6 +11,13 @@ npm run dev
 ```
 
 Open `http://localhost:3000`.
+
+## Routes
+
+- `/` Home
+- `/about` About
+- `/contact` Contact
+- `/success` Contact success
 
 ## Editable timeline
 
@@ -25,5 +32,5 @@ The timeline renders in:
 
 ## Contact route
 
-`POST /api/contact` currently validates inputs and logs payloads.
+`POST /api/contact` validates inputs, logs payloads, and redirects to `/success`.
 Replace this with your email/CRM integration.
