@@ -226,7 +226,11 @@ h3 { font-size: 1.1rem; }
   object-fit: cover;
 }
 
-.proof,
+.proof {
+  display: block;
+}
+
+.proof-main,
 .about-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -251,7 +255,7 @@ h3 { font-size: 1.1rem; }
 
 .timeline-wrap {
   margin: 0;
-  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
   background: #fff;
   padding: 0.8rem 0.8rem 0.95rem;
 }
@@ -405,7 +409,7 @@ h3 { font-size: 1.1rem; }
   nav { display: none; }
   .hero,
   .grid,
-  .proof,
+  .proof-main,
   .about-panel,
   .contact { grid-template-columns: 1fr; }
   .hero-left,
