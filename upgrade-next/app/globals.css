@@ -1,0 +1,266 @@
+:root {
+  --bg: #f4efe6;
+  --surface: #fff9f0;
+  --ink: #1f2733;
+  --muted: #596678;
+  --line: #d7d1c7;
+  --brand: #ea5b2f;
+  --brand2: #0f8c7e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 12% -2%, rgba(15, 140, 126, 0.13), transparent 26rem),
+    radial-gradient(circle at 92% -2%, rgba(234, 91, 47, 0.14), transparent 24rem),
+    var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1140px, 94vw);
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(244, 239, 230, 0.9);
+  border-bottom: 1px solid rgba(31, 39, 51, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.header-inner {
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.panel {
+  margin: 1rem auto;
+  border: 1px solid var(--line);
+  background: linear-gradient(140deg, var(--surface), #eee7de);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+}
+
+.hero-copy,
+.hero-media {
+  padding: clamp(1rem, 4vw, 2.6rem);
+}
+
+.hero-copy {
+  border-right: 1px solid var(--line);
+}
+
+.hero-media img {
+  width: 100%;
+  border: 1px solid rgba(31, 39, 51, 0.14);
+  background: #fff;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand2);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.05;
+}
+
+h1 {
+  margin-top: 0.7rem;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+}
+
+h2 {
+  margin-top: 0.65rem;
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 1px solid;
+  padding: 0.6rem 0.95rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary {
+  color: #fff;
+  border-color: var(--brand);
+  background: var(--brand);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col {
+  padding: clamp(1rem, 4vw, 2.2rem);
+}
+
+.col + .col {
+  border-left: 1px solid var(--line);
+}
+
+.stats {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.stat {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 0.9rem;
+}
+
+.timeline-wrap {
+  border-top: 1px solid var(--line);
+  background: #fff;
+  padding: 0.5rem 0.8rem 0.9rem;
+}
+
+.timeline-track {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1.5rem 0.2rem 0.55rem;
+}
+
+.timeline-track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.95rem;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(15, 140, 126, 0.55), rgba(234, 91, 47, 0.55));
+}
+
+.timeline-item {
+  position: relative;
+  min-width: 15rem;
+  max-width: 15rem;
+  padding-top: 0.8rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: -0.74rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: var(--brand);
+  border: 2px solid #fff;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 0.56rem;
+  top: -0.1rem;
+  width: 1px;
+  height: 0.45rem;
+  background: rgba(31, 39, 51, 0.4);
+}
+
+.period {
+  margin: 0 0 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand2);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.detail {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid #bcc5d1;
+  padding: 0.65rem;
+  background: #fff;
+  font: inherit;
+}
+
+.footer {
+  padding: 1rem 0 1.6rem;
+  color: #627285;
+}
+
+@media (max-width: 980px) {
+  .hero,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .col + .col {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}
