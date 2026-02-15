@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicholas Ward | Variant C</title>
+  <meta name="description" content="Variant C: an editorial, high-contrast A/B experience for Nicholas Ward.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="header">
+    <a class="brand" href="#top">NW</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="chip" href="../index.html">Original Site</a>
+  </header>
+
+  <main id="top">
+    <section class="hero panel">
+      <div class="hero-left reveal">
+        <p class="kicker">Variant C / A-B Test</p>
+        <h1>Execution<br>that clients feel.</h1>
+        <p class="sub">
+          Technical operations leadership for teams that need fewer delays, clearer ownership, and stronger delivery outcomes.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#contact">Book Intro Call</a>
+          <a class="btn btn-outline" href="../cvAug2020.docx">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-right reveal" aria-hidden="true">
+        <img src="../img/banner/home-right.png" alt="">
+      </div>
+    </section>
+
+    <section class="stripe">
+      <div class="marquee">
+        <span>Client Onboarding</span>
+        <span>Delivery Leadership</span>
+        <span>Operational Governance</span>
+        <span>Stakeholder Trust</span>
+        <span>Client Onboarding</span>
+        <span>Delivery Leadership</span>
+      </div>
+    </section>
+
+    <section class="panel services" id="services">
+      <div class="title reveal">
+        <p class="kicker">What I Do</p>
+        <h2>From scoping to support, without chaos in the middle.</h2>
+      </div>
+      <div class="grid">
+        <article class="service reveal">
+          <h3>01 Onboarding Architecture</h3>
+          <p>Shape implementation plans that reduce ambiguity and accelerate value delivery.</p>
+        </article>
+        <article class="service reveal">
+          <h3>02 Technical Service Delivery</h3>
+          <p>Drive execution in SaaS and DevOps environments with attention to quality and reliability.</p>
+        </article>
+        <article class="service reveal">
+          <h3>03 Controls and Standards</h3>
+          <p>Embed practical controls aligned to ISO-oriented governance and audit readiness.</p>
+        </article>
+        <article class="service reveal">
+          <h3>04 Relationship Ownership</h3>
+          <p>Maintain momentum through transparent communication and strong stakeholder confidence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel proof" id="proof">
+      <div class="proof-left reveal">
+        <p class="kicker">Proof</p>
+        <h2>20+ years across technical and operational delivery.</h2>
+        <ul>
+          <li>End-to-end project ownership across multi-stage implementations.</li>
+          <li>Bridging business goals and engineering execution.</li>
+          <li>Strong client retention through trust and consistency.</li>
+        </ul>
+        <a class="btn btn-solid" href="https://github.com/Wardy-uk">View GitHub</a>
+      </div>
+      <div class="proof-right">
+        <div class="stat reveal"><strong>20+</strong><span>Years Experience</span></div>
+        <div class="stat reveal"><strong>ISO</strong><span>Process-Led Delivery</span></div>
+        <div class="stat reveal"><strong>E2E</strong><span>Scoping to Support</span></div>
+      </div>
+    </section>
+
+    <section class="panel contact" id="contact">
+      <div class="contact-left reveal">
+        <p class="kicker">Contact</p>
+        <h2>Let’s make your next delivery smoother.</h2>
+        <p>Prefer direct email? <a href="mailto:contact@nickward.co.uk">contact@nickward.co.uk</a></p>
+      </div>
+      <form class="contact-form reveal" name="contact-variant-c" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="success.html">
+        <input type="hidden" name="form-name" value="contact-variant-c">
+        <p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn btn-solid" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; <span id="year"></span> Nicholas Ward</small>
+    <small><a href="../ab-wow/index.html">View Variant B</a></small>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
