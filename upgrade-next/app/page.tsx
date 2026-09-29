@@ -7,6 +7,7 @@ import "./refinement.css";
 import "./mock.css";
 import "./wow-home.css";
 import "./portfolio.css";
+import "./showcase.css";
 
 const services = [
   ["01", "Client Onboarding", "End-to-end onboarding from initial scope to live implementation."],
