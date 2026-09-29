@@ -190,7 +190,7 @@ body:has(.hero-showcase) .timeline-section .title { color:#fff; font-size:1rem; 
 }
 
 .capabilities { color:#fff; background:#1a1e43; border-top:1px solid rgba(255,255,255,.14); }
-.capabilities-inner { display:grid; grid-template-columns:minmax(0, .9fr) minmax(0, 1.1fr); gap:clamp(3rem, 9vw, 10rem); padding-block:clamp(5rem, 9vw, 9rem); }
+.capabilities-inner { display:grid; grid-template-columns:minmax(0, .9fr) minmax(0, 1.1fr); gap:clamp(3rem, 9vw, 10rem); padding-top:clamp(4.5rem, 7vw, 7rem); padding-bottom:clamp(2.75rem, 4vw, 4rem); }
 .capabilities-intro { position:sticky; top:2rem; align-self:start; }
 .capabilities .eyebrow { color:#dfe979; }
 .capabilities h2 { max-width:8ch; margin:.85rem 0 1.75rem; color:#fff; font-size:clamp(3rem, 5vw, 5.8rem); line-height:.86; }
@@ -200,6 +200,7 @@ body:has(.hero-showcase) .timeline-section .title { color:#fff; font-size:1rem; 
 .capability > span { color:#dfe979; font:500 .68rem/1.6 var(--mono); letter-spacing:.1em; }
 .capability h3 { margin:0; color:#fff; font-size:1.12rem; }
 .capability p { margin:0; color:#c8cede; line-height:1.55; }
+body:has(.hero-showcase) .case-study-grid { padding-top:clamp(3.5rem, 5vw, 5rem); padding-bottom:clamp(4.5rem, 7vw, 6rem); }
 
 @media (max-width:800px) {
   body:has(.hero-showcase) .header { position:relative; }

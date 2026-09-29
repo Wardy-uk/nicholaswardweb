@@ -37,8 +37,8 @@ export const timelineEntries: TimelineEntry[] = [
     detail: "Ensured client service delivery, built and maintained technical and business support solutions, and managed and motivated delivery teams.",
   },
   {
-    period: "Today",
-    title: "Technical & Operational Leadership",
-    detail: "Building capable teams, improving operating models and creating bespoke tooling while adopting AI in a way that strengthens ownership and thinking.",
+    period: "2020",
+    title: "Head of Technical Support",
+    detail: "Built and lead a technical-support team through acquisitions and client growth—from four people to a peak of 17, and now 11 delivering the same workload through process optimisation, personal development, bespoke tooling and thoughtful AI adoption.",
   },
 ];

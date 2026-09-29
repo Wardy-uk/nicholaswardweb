@@ -14,6 +14,7 @@ const services = [
   ["02", "Technical Delivery", "Design, development and delivery of SaaS solutions in a DevOps environment."],
   ["03", "Operational Management", "Analysing, implementing and managing controls and operational processes in line with ISO 27001, ISO 9001 and ISO 14001."],
   ["04", "Stakeholder Relationships", "Building strong, lasting relationships with clients and internal stakeholders to understand their business and build lasting trust."],
+  ["05", "AI Enablement", "Building bespoke tooling and adopting AI to reduce friction, strengthen delivery and give teams more room to think—not less."],
 ];
 
 export default function HomePage() {
@@ -25,7 +26,7 @@ export default function HomePage() {
           <h1>I am Nicholas Ward</h1>
           <p className="lead">I help teams move from early scoping through implementation, rollout, and ongoing support with fewer delivery surprises.</p>
           <div className="hero-actions"><Link className="button button-primary" href="/about">Learn More <span className="button-arrow">↗</span></Link><Link className="button" href="/contact">Contact</Link><a className="button" href="/cvAug2020.docx">Download CV</a></div>
-          <div className="hero-proof" aria-label="Professional focus"><span>20+ years</span><span>Delivery leadership</span><span>Teams &amp; systems</span></div>
+          <div className="hero-proof" aria-label="Professional focus"><span>20+ years</span><span>Technical leadership</span><span>Teams &amp; systems</span></div>
         </div>
         <div className="hero-media hero-showcase-media"><div className="hero-orbit hero-orbit-one" aria-hidden="true" /><div className="hero-orbit hero-orbit-two" aria-hidden="true" /><img src="/img/nicholas-hero-cutout.png" alt="Portrait of Nicholas Ward" /></div>
       </section>
