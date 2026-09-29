@@ -4,46 +4,41 @@ export type TimelineEntry = {
   detail: string;
 };
 
-// Edit this list to add/update timeline milestones.
+// Career milestones transcribed from Nicholas Ward's original timeline.
 export const timelineEntries: TimelineEntry[] = [
   {
+    period: "1996",
+    title: "Fortoak Packaging — Stock & Inventory Controller",
+    detail: "Responsible for stock integrity across circa 6,000 SKUs, availability, discrepancy reporting and obsolescence management; also supported fire safety, first aid and the bulk-storage team.",
+  },
+  {
     period: "2003",
-    title: "Operations Career Start",
-    detail: "Built service-management foundations in client-led environments.",
+    title: "Communisis — Stock Control Supervisor",
+    detail: "Led the stock and inventory-control department, bulk replenishment team and goods-in department, maintaining integrity across circa 10,000 SKUs.",
   },
   {
     period: "2008",
-    title: "Client Onboarding Focus",
-    detail: "Owned onboarding workflows and implementation planning across key accounts.",
+    title: "Communisis — Operations & Implementations Controller",
+    detail: "Provided operational support for a busy logistics site, business processes and implementation projects; responsible for ISO and health-and-safety compliance and key accounts.",
   },
   {
-    period: "2012",
-    title: "Technical Delivery Leadership",
-    detail: "Led programs from business scoping through rollout and ongoing support.",
+    period: "2010",
+    title: "Communisis — Operations & Implementations Manager",
+    detail: "Proposed, delivered and managed controls and operational processes; project-managed client IT and process implementations, with direct responsibility for accounts and logistics.",
   },
   {
-    period: "2015",
-    title: "DevOps-Aligned Delivery",
-    detail: "Drove SaaS delivery with stronger engineering and operational collaboration.",
+    period: "2011",
+    title: "Communisis — Senior Technical Account Manager, MT",
+    detail: "Ensured delivery of marketing-technology SaaS services, built technical and business support solutions, and led client communication and relationship management.",
   },
   {
-    period: "2018",
-    title: "Governance Integration",
-    detail: "Embedded ISO-aligned controls and process quality across operations.",
-  },
-  {
-    period: "2020",
-    title: "Account + Delivery Ownership",
-    detail: "Combined technical account leadership with end-to-end execution oversight.",
-  },
-  {
-    period: "2023",
-    title: "Operational Optimization",
-    detail: "Improved predictability through measurable process and communication standards.",
+    period: "2019",
+    title: "Communisis — Senior Technical Account Manager, Data",
+    detail: "Ensured client service delivery, built and maintained technical and business support solutions, and managed and motivated delivery teams.",
   },
   {
     period: "Today",
-    title: "End-to-End Leadership",
-    detail: "Leads technical, operational, and project outcomes from scoping to support.",
+    title: "Technical & Operational Leadership",
+    detail: "Building capable teams, improving operating models and creating bespoke tooling while adopting AI in a way that strengthens ownership and thinking.",
   },
 ];
