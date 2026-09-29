@@ -31,9 +31,11 @@ export default function HomePage() {
       </section>
       <section className="timeline-section"><div className="container"><div className="career-top"><div><p className="eyebrow">Career in motion</p><h2>Experience that compounds.</h2></div><Link className="button" href="/about">The full story <span className="button-arrow">↗</span></Link></div><Timeline /></div></section>
 
-      <section className="section container">
-        <div className="section-intro"><div><p className="eyebrow">What I Do</p><h2>From onboarding to service delivery</h2></div><p className="lead">From solution inception and technical analysis through development, rollout and ongoing support—with operational controls and client trust at the centre.</p></div>
-        <div className="services">{services.map(([number, title, copy]) => <article className="service" key={number}><span className="service-number">{number}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
+      <section className="capabilities">
+        <div className="container capabilities-inner">
+          <div className="capabilities-intro"><p className="eyebrow">What I Do</p><h2>From onboarding to service delivery</h2><p>From solution inception and technical analysis through development, rollout and ongoing support—with operational controls and client trust at the centre.</p></div>
+          <div className="capability-list">{services.map(([number, title, copy]) => <article className="capability" key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
+        </div>
       </section>
 
           <section className="case-study"><div className="container case-study-grid"><div className="case-study-intro"><p className="eyebrow">Current leadership story</p><h2>Built the team. Improved the model.</h2><p>I took a team of four through the period after COVID, alongside acquisitions and significant client growth. At its peak, the function grew to 17 people.</p></div><div className="case-study-detail"><div className="case-stats"><div><strong>4</strong><span>Starting team</span></div><div><strong>17</strong><span>At peak</span></div><div><strong>11</strong><span>Team today</span></div></div><p>Most people who moved on did so to take more technical roles, internally or elsewhere, using capabilities developed in the team. Process optimisation, personal growth, bespoke tooling I built, and thoughtful AI adoption now allow the same workload to be delivered by a smaller, more capable team.</p><Link className="case-link" href="/about">How I think about teams and AI <span aria-hidden="true">↗</span></Link></div></div></section>
