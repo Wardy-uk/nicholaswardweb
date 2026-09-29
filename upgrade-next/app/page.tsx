@@ -14,7 +14,7 @@ const services = [
   ["02", "Technical Delivery", "Design, development and delivery of SaaS solutions in a DevOps environment."],
   ["03", "Operational Management", "Analysing, implementing and managing controls and operational processes in line with ISO 27001, ISO 9001 and ISO 14001."],
   ["04", "Stakeholder Relationships", "Building strong, lasting relationships with clients and internal stakeholders to understand their business and build lasting trust."],
-  ["05", "AI Enablement", "Building bespoke tooling and adopting AI to reduce friction, strengthen delivery and give teams more room to think—not less."],
+  ["05", "AI Enablement", "Building bespoke tooling and adopting AI to reduce friction, strengthen delivery and give teams more room to think, not less."],
 ];
 
 export default function HomePage() {
@@ -34,7 +34,7 @@ export default function HomePage() {
 
       <section className="capabilities">
         <div className="container capabilities-inner">
-          <div className="capabilities-intro"><p className="eyebrow">What I Do</p><h2>From onboarding to service delivery</h2><p>From solution inception and technical analysis through development, rollout and ongoing support—with operational controls and client trust at the centre.</p></div>
+          <div className="capabilities-intro"><p className="eyebrow">What I Do</p><h2>From onboarding to service delivery</h2><p>From solution inception and technical analysis through development, rollout and ongoing support, with operational controls and client trust at the centre.</p></div>
           <div className="capability-list">{services.map(([number, title, copy]) => <article className="capability" key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
         </div>
       </section>
