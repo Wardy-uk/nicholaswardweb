@@ -159,6 +159,36 @@ body:has(.hero-showcase) .timeline-section .timeline-item:not(:first-child)::bef
 body:has(.hero-showcase) .timeline-section .period { margin-bottom:.55rem; }
 body:has(.hero-showcase) .timeline-section .title { color:#fff; font-size:1rem; }
 
+/* The career is intentionally a browsable timeline: a designed scrubber, never a browser-default scrollbar. */
+@media (min-width: 801px) {
+  body:has(.hero-showcase) .timeline-section .timeline-track {
+    display:flex;
+    grid-template-columns:none;
+    gap:0;
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding:0 0 1.25rem;
+    border-top:1px solid rgba(255,255,255,.22);
+    scrollbar-width:thin;
+    scrollbar-color:#dfe979 rgba(255,255,255,.13);
+    scrollbar-gutter:stable;
+  }
+  body:has(.hero-showcase) .timeline-section .timeline-track::-webkit-scrollbar { height:10px; }
+  body:has(.hero-showcase) .timeline-section .timeline-track::-webkit-scrollbar-track { background:rgba(255,255,255,.13); border:3px solid #1a1e43; border-radius:999px; }
+  body:has(.hero-showcase) .timeline-section .timeline-track::-webkit-scrollbar-thumb { background:linear-gradient(90deg,#dfe979,#f0a67c); border:3px solid #1a1e43; border-radius:999px; }
+  body:has(.hero-showcase) .timeline-section .timeline-track::-webkit-scrollbar-thumb:hover { background:#f0a67c; }
+  body:has(.hero-showcase) .timeline-section .timeline-item,
+  body:has(.hero-showcase) .timeline-section .timeline-item:not(:first-child) {
+    flex:0 0 min(360px, 31vw);
+    min-height:205px;
+    padding:1.55rem 2rem 1.75rem 1.45rem;
+    border-bottom:1px solid rgba(255,255,255,.16) !important;
+    border-right:1px solid rgba(255,255,255,.16) !important;
+  }
+  body:has(.hero-showcase) .timeline-section .timeline-item::before,
+  body:has(.hero-showcase) .timeline-section .timeline-item:not(:first-child)::before { left:0; }
+}
+
 .capabilities { color:#fff; background:#1a1e43; border-top:1px solid rgba(255,255,255,.14); }
 .capabilities-inner { display:grid; grid-template-columns:minmax(0, .9fr) minmax(0, 1.1fr); gap:clamp(3rem, 9vw, 10rem); padding-block:clamp(5rem, 9vw, 9rem); }
 .capabilities-intro { position:sticky; top:2rem; align-self:start; }
