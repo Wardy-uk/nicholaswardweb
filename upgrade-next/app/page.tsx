@@ -10,10 +10,10 @@ import "./portfolio.css";
 import "./showcase.css";
 
 const services = [
-  ["01", "Client Onboarding", "End-to-end onboarding from initial scope to live implementation."],
-  ["02", "Technical Delivery", "Design and delivery of SaaS solutions in DevOps-focused environments."],
-  ["03", "Operational Management", "Process and control management aligned to ISO-oriented standards."],
-  ["04", "Stakeholder Relationships", "Trusted communication across clients and internal delivery teams."],
+  ["01", "Client Onboarding", "All stages of client onboarding, from solution inception through development, delivery and rollout of client solutions."],
+  ["02", "Technical Delivery", "Design, development and delivery of SaaS solutions in a DevOps environment."],
+  ["03", "Operational Management", "Analysing, implementing and managing controls and operational processes in line with ISO 27001, ISO 9001 and ISO 14001."],
+  ["04", "Stakeholder Relationships", "Building strong, lasting relationships with clients and internal stakeholders to understand their business and build lasting trust."],
 ];
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
     <main id="main">
       <section className="hero hero-showcase">
         <div className="hero-copy hero-showcase-copy">
-          <p className="eyebrow">Technical + Operational Leadership</p>
+          <p className="eyebrow">Technical + Operational Manager</p>
           <h1>I am Nicholas Ward</h1>
           <p className="lead">I help teams move from early scoping through implementation, rollout, and ongoing support with fewer delivery surprises.</p>
           <div className="hero-actions"><Link className="button button-primary" href="/about">Learn More <span className="button-arrow">↗</span></Link><Link className="button" href="/contact">Contact</Link><a className="button" href="/cvAug2020.docx">Download CV</a></div>
@@ -32,7 +32,7 @@ export default function HomePage() {
       <section className="timeline-section"><div className="container"><div className="career-top"><div><p className="eyebrow">Career in motion</p><h2>Experience that compounds.</h2></div><Link className="button" href="/about">The full story <span className="button-arrow">↗</span></Link></div><Timeline /></div></section>
 
       <section className="section container">
-        <div className="section-intro"><div><p className="eyebrow">What I Do</p><h2>From onboarding to service delivery</h2></div><p className="lead">From scoping to rollout, with operational controls and client trust at the center.</p></div>
+        <div className="section-intro"><div><p className="eyebrow">What I Do</p><h2>From onboarding to service delivery</h2></div><p className="lead">From solution inception and technical analysis through development, rollout and ongoing support—with operational controls and client trust at the centre.</p></div>
         <div className="services">{services.map(([number, title, copy]) => <article className="service" key={number}><span className="service-number">{number}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
       </section>
 
