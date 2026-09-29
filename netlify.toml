@@ -1,0 +1,4 @@
+[build]
+  base = "upgrade-next"
+  command = "npm run build"
+  publish = ".next"

@@ -3,97 +3,40 @@ import { ContactForm } from "../components/ContactForm";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import { Timeline } from "../components/Timeline";
+import "./refinement.css";
+import "./mock.css";
+import "./wow-home.css";
+import "./portfolio.css";
+
+const services = [
+  ["01", "Client Onboarding", "End-to-end onboarding from initial scope to live implementation."],
+  ["02", "Technical Delivery", "Design and delivery of SaaS solutions in DevOps-focused environments."],
+  ["03", "Operational Management", "Process and control management aligned to ISO-oriented standards."],
+  ["04", "Stakeholder Relationships", "Trusted communication across clients and internal delivery teams."],
+];
 
 export default function HomePage() {
-  return (
-    <>
-      <SiteHeader active="home" />
+  return <><SiteHeader active="home" />
+    <main id="main">
+      <section className="hero">
+        <div className="hero-copy">
+          <p className="eyebrow">Technical + Operational Leadership</p>
+          <h1>I am Nicholas Ward</h1>
+          <p className="lead">I help teams move from early scoping through implementation, rollout, and ongoing support with fewer delivery surprises.</p>
+          <div className="hero-actions"><Link className="button button-primary" href="/about">Learn More <span className="button-arrow">↗</span></Link><Link className="button" href="/contact">Contact</Link><a className="button" href="/cvAug2020.docx">Download CV</a></div>
+        </div>
+        <div className="hero-media"><img src="/img/nicholas-hero-cutout.png" alt="Portrait of Nicholas Ward" /></div>
+      </section>
+      <section className="timeline-section"><div className="container"><div className="career-top"><div><p className="eyebrow">Career in motion</p><h2>Experience that compounds.</h2></div><Link className="button" href="/about">The full story <span className="button-arrow">↗</span></Link></div><Timeline /></div></section>
 
-      <main className="container">
-        <section className="panel hero">
-          <div className="hero-copy">
-            <p className="kicker">Technical + Operational Leadership</p>
-            <h1>I am Nicholas Ward</h1>
-            <p className="lead">
-              I help teams move from early scoping through implementation, rollout, and ongoing support with fewer delivery surprises.
-            </p>
-            <div className="actions">
-              <Link className="btn btn-primary" href="/about">
-                Learn More
-              </Link>
-              <Link className="btn" href="/contact">
-                Contact
-              </Link>
-              <a className="btn" href="/cvAug2020.docx">
-                Download CV
-              </a>
-            </div>
-          </div>
-          <div className="hero-media">
-            <img src="/img/banner/home-right.png" alt="Portrait of Nicholas Ward" />
-          </div>
-        </section>
+      <section className="section container">
+        <div className="section-intro"><div><p className="eyebrow">What I Do</p><h2>From onboarding to service delivery</h2></div><p className="lead">From scoping to rollout, with operational controls and client trust at the center.</p></div>
+        <div className="services">{services.map(([number, title, copy]) => <article className="service" key={number}><span className="service-number">{number}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
+      </section>
 
-        <section className="panel">
-          <div className="section-head">
-            <p className="kicker">What I Do</p>
-            <h2>From onboarding to service delivery</h2>
-          </div>
-          <div className="feature-grid">
-            <article className="feature-card">
-              <h3>Client Onboarding</h3>
-              <p>End-to-end onboarding from initial scope to live implementation.</p>
-            </article>
-            <article className="feature-card">
-              <h3>Technical Delivery</h3>
-              <p>Design and delivery of SaaS solutions in DevOps-focused environments.</p>
-            </article>
-            <article className="feature-card">
-              <h3>Operational Management</h3>
-              <p>Process and control management aligned to ISO-oriented standards.</p>
-            </article>
-            <article className="feature-card">
-              <h3>Stakeholder Relationships</h3>
-              <p>Trusted communication across clients and internal delivery teams.</p>
-            </article>
-          </div>
-        </section>
+          <section className="case-study"><div className="container case-study-grid"><div className="case-study-intro"><p className="eyebrow">Current leadership story</p><h2>Built the team. Improved the model.</h2><p>I took a team of four through the period after COVID, alongside acquisitions and significant client growth. At its peak, the function grew to 17 people.</p></div><div className="case-study-detail"><div className="case-stats"><div><strong>4</strong><span>Starting team</span></div><div><strong>17</strong><span>At peak</span></div><div><strong>11</strong><span>Team today</span></div></div><p>Most people who moved on did so to take more technical roles, internally or elsewhere, using capabilities developed in the team. Process optimisation, personal growth, bespoke tooling I built, and thoughtful AI adoption now allow the same workload to be delivered by a smaller, more capable team.</p><Link className="case-link" href="/about">How I think about teams and AI <span aria-hidden="true">↗</span></Link></div></div></section>
 
-        <section className="panel">
-          <div className="grid-2">
-            <article className="col">
-              <p className="kicker">Proof</p>
-              <h2>20+ years across technical and operational delivery.</h2>
-              <p className="lead">
-                From scoping to rollout, with operational controls and client trust at the center.
-              </p>
-            </article>
-            <aside className="col stats">
-              <div className="stat">20+ Years Experience</div>
-              <div className="stat">ISO-Oriented Governance</div>
-              <div className="stat">End-to-End Delivery Ownership</div>
-            </aside>
-          </div>
-          <Timeline />
-        </section>
-
-        <section className="panel">
-          <div className="grid-2">
-            <article className="col">
-              <p className="kicker">Contact</p>
-              <h2>Start a conversation</h2>
-              <p className="lead">
-                Prefer direct email? <a href="mailto:contact@nickward.co.uk">contact@nickward.co.uk</a>
-              </p>
-            </article>
-            <div className="col">
-              <ContactForm compact />
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <SiteFooter />
-    </>
-  );
+      <section className="contact-band"><div className="container contact-grid"><div><p className="eyebrow">Contact</p><h2>Bring me a challenge worth solving.</h2><p className="lead">Prefer direct email? <a href="mailto:contact@nickward.co.uk">contact@nickward.co.uk</a></p></div><ContactForm compact /></div></section>
+    </main><SiteFooter />
+  </>;
 }

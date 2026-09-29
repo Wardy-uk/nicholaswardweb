@@ -1,0 +1,8 @@
+:root { --ink:#191b3a; --paper:#fbf8f2; --muted:#5e6075; --line:#d8d2c8; --blue:#4a5dde; --yellow:#f6cf47; --plum:#5a4574; --peach:#e7a875; --lilac:#e9e5f2; }
+.portrait { filter:none; background:#fff; box-shadow:14px 14px 0 var(--yellow); }
+.page-hero { background:var(--ink); color:#fff; border-bottom:0; }
+.page-hero .eyebrow { color:var(--yellow); }
+.page-layout { padding-top:clamp(3rem,7vw,6rem); padding-bottom:clamp(3rem,7vw,6rem); }
+.page-layout .lead { color:var(--muted); }
+.contact-page { background:var(--lilac); }
+.contact-page .page-hero { background:var(--plum); }

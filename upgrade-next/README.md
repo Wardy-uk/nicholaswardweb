@@ -16,6 +16,8 @@ Open `http://localhost:3000`.
 
 - `/` Home
 - `/about` About
+- `/work` Portfolio index
+- `/work/nicholas-ward` First documented case study
 - `/contact` Contact
 - `/success` Contact success
 
@@ -32,5 +34,11 @@ The timeline renders in:
 
 ## Contact route
 
-`POST /api/contact` validates inputs, logs payloads, and redirects to `/success`.
-Replace this with your email/CRM integration.
+`POST /api/contact` validates inputs, includes a basic honeypot, and sends through Resend.
+Copy `.env.example` to `.env.local`, verify the sending domain in Resend, then set the three values before deployment. The form deliberately returns an error until configured rather than pretending a message has been sent.
+
+## Before launch
+
+- Add verified client case studies in `data/work.ts` (do not manufacture results or testimonials).
+- Configure Resend environment variables in the host.
+- Add analytics only after choosing a provider and publishing a matching privacy notice.

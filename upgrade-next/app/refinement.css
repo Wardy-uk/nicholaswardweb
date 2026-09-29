@@ -1,0 +1,13 @@
+/* A calmer presentation layer: the content and original portrait do the work. */
+.hero { min-height: 560px; }
+.hero-copy { padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: 3rem; }
+.hero-copy::before { width: 6px; }
+.hero h1 { max-width: 12ch; font-size: clamp(3.1rem, 6vw, 5.4rem); }
+.hero-media { background: #dfe5e5; }
+.hero-media::before { background: linear-gradient(135deg, rgba(35, 88, 229, .12), transparent 55%); }
+.hero-media::after { display: none; }
+.hero-media img { min-height: 560px; object-fit: cover; object-position: center; }
+.section-intro h2, .statement h2, .career-top h2 { max-width: 15ch; }
+.statement { background: #172238; }
+.contact-portrait { margin-top: 2rem; max-width: 420px; }
+@media (max-width: 800px) { .hero { min-height: 0; } .hero-media, .hero-media img { min-height: 380px; } }

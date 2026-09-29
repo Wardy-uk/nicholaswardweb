@@ -1,0 +1,25 @@
+.header { background:rgba(25,27,58,.97); border-bottom:1px solid rgba(255,255,255,.16); color:#fff; }
+.brand-mark { background:var(--yellow); color:var(--ink); }
+.nav a:not(.nav-cta)::after { background:var(--yellow); }
+.hero { background:var(--ink); border-bottom:0; }
+.hero-copy { position:relative; color:#fff; }
+.hero-copy::after { content:""; position:absolute; width:88px; height:88px; right:9%; bottom:10%; border-radius:50%; background:var(--yellow); opacity:.95; }
+.hero h1 { color:#fff; max-width:8ch; font-family:var(--serif); font-weight:700; letter-spacing:-.055em; }
+.hero .lead { color:#d9d9e7; }
+.hero .eyebrow { color:var(--yellow); }
+.hero .button { border-color:#fff; color:#fff; position:relative; z-index:1; }
+.hero .button-primary { background:var(--yellow); border-color:var(--yellow); color:var(--ink); }
+.hero-media { overflow:hidden; background:var(--peach); }
+.hero-media::before { display:block; z-index:0; background:linear-gradient(145deg,var(--peach) 0 48%,var(--blue) 48% 55%,var(--lilac) 55%); mix-blend-mode:normal; }
+.hero-media img { position:relative; z-index:1; width:88%; height:88%; min-height:0; margin:6%; background:#fff; box-shadow:20px 20px 0 var(--plum); object-fit:contain; }
+.timeline-section { background:var(--lilac); }
+.timeline-section .timeline-track::before { background:#9e94ae; }
+.timeline-section .timeline-item::before { border-color:var(--lilac); background:var(--peach); }
+.section { background:var(--paper); }
+.services { border-color:#c9c1d5; }
+.service { border-color:#c9c1d5; background:#fff; }
+.service:nth-child(2) { background:#fff6df; }.service:nth-child(3) { background:#eef0ff; }.service:nth-child(4) { background:#f8e9e1; }
+.service:hover { background:var(--plum); }
+.statement { background:var(--blue); color:#fff; }.statement .eyebrow { color:var(--yellow); }.statement-copy { color:#fff; }.proof-list li { border-color:rgba(255,255,255,.35); }.proof-list li::before { color:var(--yellow); }
+.contact-band { background:var(--peach); border:0; }.contact-band .eyebrow { color:var(--ink); }.contact-band .lead { color:#3d3546; }.form input,.form textarea { border-color:var(--ink); background:rgba(255,255,255,.35); }.footer { background:var(--ink); }
+@media(max-width:800px){.hero-copy::after{right:1.5rem;bottom:1rem;width:55px;height:55px}.hero-media img{width:82%;height:82%;margin:9%;box-shadow:12px 12px 0 var(--plum)}}
