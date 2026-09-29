@@ -18,14 +18,15 @@ const services = [
 export default function HomePage() {
   return <><SiteHeader active="home" />
     <main id="main">
-      <section className="hero">
-        <div className="hero-copy">
+      <section className="hero hero-showcase">
+        <div className="hero-copy hero-showcase-copy">
           <p className="eyebrow">Technical + Operational Leadership</p>
           <h1>I am Nicholas Ward</h1>
           <p className="lead">I help teams move from early scoping through implementation, rollout, and ongoing support with fewer delivery surprises.</p>
           <div className="hero-actions"><Link className="button button-primary" href="/about">Learn More <span className="button-arrow">↗</span></Link><Link className="button" href="/contact">Contact</Link><a className="button" href="/cvAug2020.docx">Download CV</a></div>
+          <div className="hero-proof" aria-label="Professional focus"><span>20+ years</span><span>Delivery leadership</span><span>Teams &amp; systems</span></div>
         </div>
-        <div className="hero-media"><img src="/img/nicholas-hero-cutout.png" alt="Portrait of Nicholas Ward" /></div>
+        <div className="hero-media hero-showcase-media"><div className="hero-art-label hero-art-label-top">01 / CLEAR THINKING</div><img src="/img/nicholas-hero-cutout.png" alt="Portrait of Nicholas Ward" /><div className="hero-art-label hero-art-label-bottom">OPERATIONS — TECHNOLOGY — PEOPLE</div></div>
       </section>
       <section className="timeline-section"><div className="container"><div className="career-top"><div><p className="eyebrow">Career in motion</p><h2>Experience that compounds.</h2></div><Link className="button" href="/about">The full story <span className="button-arrow">↗</span></Link></div><Timeline /></div></section>
 

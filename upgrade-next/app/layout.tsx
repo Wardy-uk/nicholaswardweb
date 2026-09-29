@@ -3,6 +3,7 @@ import "./globals.css";
 import "./header.css";
 import "./site-colour.css";
 import "./integration.css";
+import "./showcase.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nickward.co.uk"),
